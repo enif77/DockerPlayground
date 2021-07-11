@@ -9,7 +9,7 @@ NOTE: I am using Virtual Box as my virtualization platform. You can use anything
 ## TODO
 
 * Docker
-* Cocker Compose
+* Docker Compose
 * Portainer
 * Watchtower
 * Prometheus
