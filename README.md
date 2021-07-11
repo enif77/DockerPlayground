@@ -5,10 +5,10 @@ My notes about building a playground for Docker using a virtual machine with the
 NOTE: I am using Virtual Box as my virtualization platform. You can use anything else, if you want. 
 
 [Operating system - Ubuntu Server 20.04](docs/os.md)
+[Docker](docs/docker.md)
 
 ## TODO
 
-* Docker
 * Docker Compose
 * Portainer
 * Watchtower
