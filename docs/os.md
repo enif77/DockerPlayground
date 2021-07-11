@@ -61,7 +61,7 @@ ssh root@localhost -p port
 
 NOTE: Using the user `root` to connect to your VM (for example with [WinSCP](https://winscp.net/)) makes life much easier - you can go to whatever directory you want - but the VM becomes **MUCH LESS SECURE**! Do not use the user `root` to access a real server.
 
-If I am doing setup or maintenance on the VM, I am using the user `kid` with sudo. I am using the user `root` to access system and Docker files/volumes via WinSCP only.
+If I am doing setup or maintenance on the VM, I am using the user `kid` with `sudo`. I am using the user `root` to access system and Docker files/volumes via WinSCP only.
 
 ## OS Maintenance
 
@@ -70,7 +70,7 @@ sudo apt update
 sudo apt upgrade
 ```
 
-Its good to have backup of the `/etc` folder, before any changes to config files in it.
+Its good to have backup of the `/etc` folder, before any changes to configuration files in it.
 
 ## Accessing VM files
 

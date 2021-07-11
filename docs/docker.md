@@ -15,7 +15,7 @@ Description of how to install and setup Docker.
 
 Install using Docker tutorial for installing from the from Docker repository.
 
-Add the actual user (`kid`) to the `docker` user group (logout+login activates this add-to-group):
+Add the actual user (`kid`) to the `docker` user group (log out+login activates this add-to-group):
 
 ```
 sudo usermod -aG docker $USER
