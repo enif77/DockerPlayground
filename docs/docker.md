@@ -1,6 +1,6 @@
 # Docker
 
-Description of how to install and setup Docker. 
+Description of how to install and setup [Docker](https://www.docker.com). 
 
 ## Interesting links
 
@@ -13,7 +13,7 @@ Description of how to install and setup Docker.
 
 ## Installation
 
-Install using Docker tutorial for installing from the from Docker repository.
+Install using [tutorial for installing from the Docker repository](https://docs.docker.com/engine/install/ubuntu/). Continue with the [linux-postinstall tutorial](https://docs.docker.com/engine/install/linux-postinstall/).
 
 Add the actual user (`kid`) to the `docker` user group (log out+login activates this add-to-group):
 
@@ -44,7 +44,9 @@ Insert this to it and restart the Docker service (or the whole VM):
 }
 ```
 
-Use different logging setup, when needed.
+This will change logging format to JSON with maximal log file size and limited amount of log files. It also enable [Prometheus](https://prometheus.io/) metrics endpoint, so the Docker can be monitored with Prometheus.
+
+Use different logging setup, when needed. The Prometheus metrics endpoint is not necessary, when you are not planning to monitor running Docker containers with Prometheus.
 
 ## Docker network
 
