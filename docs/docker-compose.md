@@ -6,6 +6,8 @@ Download and install using the description here:
 
 https://docs.docker.com/compose/install/
 
+You can check, if it is working by running:
+
 ```
 docker-compose --version
 ```
