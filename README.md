@@ -7,10 +7,10 @@ NOTE: I am using Virtual Box as my virtualization platform. You can use anything
 - [Operating system - Ubuntu Server 20.04](docs/os.md)
 - [Docker](docs/docker.md)
 - [Docker Compose](docs/docker-compose.md)
+- [Portainer](docs/portainer.md)
 
 ## TODO
 
-* Portainer
 * Watchtower
 * Prometheus
 * Prometheus - Node Exporter
