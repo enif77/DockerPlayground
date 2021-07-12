@@ -8,10 +8,10 @@ NOTE: I am using Virtual Box as my virtualization platform. You can use anything
 - [Docker](docs/docker.md)
 - [Docker Compose](docs/docker-compose.md)
 - [Portainer](docs/portainer.md)
+- [Watchtower](docs/watchtower.md)
 
 ## TODO
 
-* Watchtower
 * Prometheus
 * Prometheus - Node Exporter
 * Prometheus - cAdvisor
