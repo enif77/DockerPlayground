@@ -13,10 +13,10 @@ NOTE: I am using Virtual Box as my virtualization platform. You can use anything
 - [Prometheus - Node Exporter](docs/prometheus-node-exporter.md)
 - [Prometheus - cAdvisor](docs/prometheus-cadvisor.md)
 - [Grafana](docs/grafana.md)
+- [nginx](docs/nginx.md)
 
 ## TODO
 
-* nginx
 * nginx - Prometheus Exporter
 * MSSQL
 * MSSQL - Prometheus Exporter
