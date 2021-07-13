@@ -31,7 +31,7 @@ Add in Virtual Box settings port mapping for port 3000, so you can access Grafan
 ```
 http://localhost:3000/
 ```
-Grafana requires to set a password for the default `adimin` user. I am using the `Passw0rd1` password.
+Grafana requires to set a password for the default `admin` user. I am using the `Passw0rd1` password.
 
 Grafana configuration can be edited by:
 
