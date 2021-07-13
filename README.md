@@ -9,14 +9,14 @@ NOTE: I am using Virtual Box as my virtualization platform. You can use anything
 - [Docker Compose](docs/docker-compose.md)
 - [Portainer](docs/portainer.md)
 - [Watchtower](docs/watchtower.md)
+- [nginx](docs/nginx.md)
 - [Prometheus](docs/prometheus.md)
 - [Prometheus - Node Exporter](docs/prometheus-node-exporter.md)
 - [Prometheus - cAdvisor](docs/prometheus-cadvisor.md)
+- [Prometheus - nginx Exporter](docs/prometheus-nginx-exporter.md)
 - [Grafana](docs/grafana.md)
-- [nginx](docs/nginx.md)
 
 ## TODO
 
-* nginx - Prometheus Exporter
 * MSSQL
 * MSSQL - Prometheus Exporter
