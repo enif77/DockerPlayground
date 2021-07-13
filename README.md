@@ -9,10 +9,10 @@ NOTE: I am using Virtual Box as my virtualization platform. You can use anything
 - [Docker Compose](docs/docker-compose.md)
 - [Portainer](docs/portainer.md)
 - [Watchtower](docs/watchtower.md)
+- [Prometheus](docs/prometheus.md)
 
 ## TODO
 
-* Prometheus
 * Prometheus - Node Exporter
 * Prometheus - cAdvisor
 * Grafana
