@@ -27,7 +27,7 @@ docker run \
   portainer/portainer-ce
 ```
 
-Add in VirtualBox setting port mapping for port 9000, so you can access Portainer from your host machine. You can access Portainer UI by opening URL:
+Add in Virtual Box settings port mapping for port 9000, so you can access Portainer from your host machine. You can access Portainer UI by opening URL:
 
 ```
 http://localhost:9000/
