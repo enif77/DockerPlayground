@@ -11,10 +11,10 @@ NOTE: I am using Virtual Box as my virtualization platform. You can use anything
 - [Watchtower](docs/watchtower.md)
 - [Prometheus](docs/prometheus.md)
 - [Prometheus - Node Exporter](docs/prometheus-node-exporter.md)
+- [Prometheus - cAdvisor](docs/prometheus-cadvisor.md)
 
 ## TODO
 
-* Prometheus - cAdvisor
 * Grafana
 * nginx
 * nginx - Prometheus Exporter
