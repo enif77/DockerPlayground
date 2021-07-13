@@ -2,9 +2,9 @@
 
 1. Download Ubuntu Server 20.04 (OS) from: https://ubuntu.com/download/server
 2. Create new 64bit virtual machine (VM) with at least 2 CPUs, 4 GB RAM and 40 GB HDD (dynamically allocated). 
-3. Install OS with ssh and no other packages/server modules. Use all default, full disk, keyboard layout of your chice.
+3. Install OS with ssh and no other packages/server modules. Use all defaults, full disk, keyboard layout of your choice.
 4. Create during the OS setup a default user with a name, lets say, `kid` - its a playground, we are building after all, right? Password can be anything. I'll use `Passw0rd1`.
-5. Map VM port 22 to a VM external port - I am using 8022.
+5. Map VM port 22 to a VM external port - I am using 8022. This allows us to connect to our VM via ssh.
 
 Internal IP address of the VM can be obtained by executing:
 
