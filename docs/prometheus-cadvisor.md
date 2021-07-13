@@ -31,10 +31,12 @@ Grafana dashboards:
 
 Prometheus config:
 
+```
   - job_name: 'cadvisor'
     scrape_interval: 5s
     static_configs:
     - targets: ['host.docker.internal:8080']
+```
 
  ## Additional links
 
