@@ -63,3 +63,18 @@ All docker named volumes are stored in directory:
 ```
 /var/lib/docker/volumes
 ```
+
+## Saving and loading images
+
+https://stackoverflow.com/questions/23935141/how-to-copy-docker-images-from-one-host-to-another-without-using-a-repository
+
+```
+docker images
+
+docker save -o <path for generated tar file> <image name>
+docker load -i <path to image tar file>
+```
+
+```
+docker save -o c:/myfile.tar centos:16
+```
