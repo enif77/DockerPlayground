@@ -18,7 +18,35 @@ To connect to the newly installed VM run this command:
 ssh kid@localhost -p 8022
 ```
 
-TODO: How to setup local time zone.
+## How to setup local time zone
+
+https://linuxize.com/post/how-to-set-or-change-timezone-on-ubuntu-20-04/
+
+To check, what is your current timezone:
+
+```
+timedatectl
+ls -l /etc/localtime
+cat /etc/timezone
+```
+
+Get the list of timezones:
+
+```
+timedatectl list-timezones
+```
+
+To set a timezone:
+
+```
+sudo timedatectl set-timezone Europe/Prague
+```
+
+Verify the new settings:
+
+```
+timedatectl
+```
 
 ## SSH access for the user root
 
