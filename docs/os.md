@@ -54,6 +54,30 @@ Install OS with ssh and no other packages/server modules. Use all defaults, full
 
 Create during the OS setup a default user with a name, lets say, `kid` - its a playground, we are building after all, right? Password can be anything. I'll use `Passw0rd1`.
 
+![Language selection](/img/os-install-01.png)
+
+![Keyboard layout selection](/img/os-install-02.png)
+
+![Network setup](/img/os-install-03.png)
+
+![Proxy settings](/img/os-install-04.png)
+
+![Ubuntu archive mirror selection](/img/os-install-05.png)
+
+![Hard disk setup](/img/os-install-06.png)
+
+![File system summary](/img/os-install-07.png)
+
+![Profile setup](/img/os-install-08.png)
+
+![SSH setup](/img/os-install-09.png)
+
+![Server modules (snaps) selection](/img/os-install-10.png)
+
+![Install complete!](/img/os-install-11.png)
+
+![First login screen](/img/os-install-12.png)
+
 ## Network setup
 
  Map VM port 22 to a VM external port - I am using 8022. This allows us to connect to our VM via ssh.
@@ -63,6 +87,10 @@ Internal IP address of the VM can be obtained by executing:
 ``` 
 networkctl status
 ```
+
+![Network](/img/os-configure-vm-04.png)
+
+![Port forwarding rules](/img/os-configure-vm-05.png)
 
 To connect to the newly installed VM run this command:
 
