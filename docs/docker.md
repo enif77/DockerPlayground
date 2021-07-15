@@ -15,6 +15,37 @@ Description of how to install and setup [Docker](https://www.docker.com).
 
 Install using [tutorial for installing from the Docker repository](https://docs.docker.com/engine/install/ubuntu/). Continue with the [linux-postinstall tutorial](https://docs.docker.com/engine/install/linux-postinstall/).
 
+### Install using the repository
+
+```
+sudo apt-get update
+
+sudo apt-get install \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    gnupg \
+    lsb-release
+
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+
+echo \
+  "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
+  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
+sudo apt-get update
+
+sudo apt-get install docker-ce docker-ce-cli containerd.io
+```
+
+Verify that Docker Engine is installed correctly by running the hello-world image.
+
+```
+sudo docker run hello-world
+```
+
+## Post install configuration
+
 Add the actual user (`kid`) to the `docker` user group (log out+login activates this add-to-group):
 
 ```
@@ -37,14 +68,14 @@ Insert this to it and restart the Docker service (or the whole VM):
   "log-driver": "json-file",
   "log-opts": {
     "max-size": "10m",
-    "max-file": "3" 
+    "max-file": "3"
   },
   "metrics-addr" : "127.0.0.1:9323",
   "experimental" : true
 }
 ```
 
-This will change logging format to JSON with maximal log file size and limited amount of log files. It also enable [Prometheus](https://prometheus.io/) metrics endpoint, so the Docker can be monitored with Prometheus.
+This will change logging format to JSON with a maximal log file size and a limited amount of log files. It also enables [Prometheus](https://prometheus.io/) metrics endpoint, so the Docker can be monitored with Prometheus.
 
 Use different logging setup, when needed. The Prometheus metrics endpoint is not necessary, when you are not planning to monitor running Docker containers with Prometheus.
 
