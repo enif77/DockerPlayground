@@ -39,6 +39,12 @@ Grafana configuration can be edited by:
 sudo nano /var/lib/docker/volumes/grafana_config/_data/grafana.ini
 ```
 
+Grafana metrics for Prometheus are available at URL:
+
+```
+http://localhost:3000/metrics
+```
+
 Prometheus config:
 
 ```
