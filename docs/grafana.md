@@ -38,3 +38,11 @@ Grafana configuration can be edited by:
 ```
 sudo nano /var/lib/docker/volumes/grafana_config/_data/grafana.ini
 ```
+
+Prometheus config:
+
+```
+  - job_name: 'grafana'
+    static_configs:
+    - targets: ['grafana:3000']
+```
