@@ -10,9 +10,9 @@ Node exporter is for monitoring the VM itself.
 Download and install node exporter:
 
 ```
-wget https://github.com/prometheus/node_exporter/releases/download/v1.1.2/node_exporter-1.1.2.linux-amd64.tar.gz
-tar xvfz node_exporter-1.1.2.linux-amd64.tar.gz 
-sudo cp node_exporter-1.1.2.linux-amd64/node_exporter /usr/local/bin/
+wget https://github.com/prometheus/node_exporter/releases/download/v1.2.0/node_exporter-1.2.0.linux-amd64.tar.gz
+tar xvfz node_exporter-1.2.0.linux-amd64.tar.gz 
+sudo cp node_exporter-1.2.0.linux-amd64/node_exporter /usr/local/bin/
 ```
 
 Create a service user: 
