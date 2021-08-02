@@ -15,6 +15,13 @@ tar xvfz node_exporter-1.2.0.linux-amd64.tar.gz
 sudo cp node_exporter-1.2.0.linux-amd64/node_exporter /usr/local/bin/
 ```
 
+You can remove downloaded and extracted node exporter files version by:
+
+```
+sudo rm -r node_exporter-1.2.0.linux-amd64
+rm node_exporter-1.2.0.linux-amd64.*
+```
+
 Create a service user: 
 
 ```
