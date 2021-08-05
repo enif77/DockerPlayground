@@ -8,6 +8,10 @@ Node exporter is for monitoring the VM (or a physical machine) itself.
 - https://prometheus.io/download/#node_exporter
 - https://devopscube.com/monitor-linux-servers-prometheus-node-exporter/
 
+## Installation
+
+Check, what is the latest version at the [releases](https://github.com/prometheus/node_exporter/releases) page.
+
 Download and install node exporter:
 
 ```
@@ -79,7 +83,7 @@ https://grafana.com/grafana/dashboards/1860
 
 ## Updating
 
-Check, hat is the latest version at [releases](https://github.com/prometheus/node_exporter/releases) page.
+Check, what is the latest version at the [releases](https://github.com/prometheus/node_exporter/releases) page.
 
 ```
 # Download and extract the latest version:
