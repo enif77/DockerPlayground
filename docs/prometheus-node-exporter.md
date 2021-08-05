@@ -1,8 +1,9 @@
 # Prometheus - Node Exporter
 
-Node exporter is for monitoring the VM itself.
+Node exporter is for monitoring the VM (or a physical machine) itself.
 
 - https://github.com/prometheus/node_exporter
+- https://github.com/prometheus/node_exporter/releases
 - https://prometheus.io/docs/guides/node-exporter/
 - https://prometheus.io/download/#node_exporter
 - https://devopscube.com/monitor-linux-servers-prometheus-node-exporter/
@@ -10,16 +11,9 @@ Node exporter is for monitoring the VM itself.
 Download and install node exporter:
 
 ```
-wget https://github.com/prometheus/node_exporter/releases/download/v1.2.0/node_exporter-1.2.0.linux-amd64.tar.gz
-tar xvfz node_exporter-1.2.0.linux-amd64.tar.gz 
-sudo cp node_exporter-1.2.0.linux-amd64/node_exporter /usr/local/bin/
-```
-
-You can remove downloaded and extracted node exporter files version by:
-
-```
-sudo rm -r node_exporter-1.2.0.linux-amd64
-rm node_exporter-1.2.0.linux-amd64.*
+wget https://github.com/prometheus/node_exporter/releases/download/v1.2.1/node_exporter-1.2.1.linux-amd64.tar.gz
+tar xvfz node_exporter-1.2.1.linux-amd64.tar.gz 
+sudo cp node_exporter-1.2.1.linux-amd64/node_exporter /usr/local/bin/
 ```
 
 Create a service user: 
@@ -28,7 +22,7 @@ Create a service user:
 sudo useradd -rs /bin/false node_exporter
 ```
 
-Create a service for node exporter:
+Create a service for the node exporter:
 
 ```
 sudo nano /etc/systemd/system/node_exporter.service
@@ -81,4 +75,32 @@ Grafana dashboard:
 
 ```
 https://grafana.com/grafana/dashboards/1860
+```
+
+## Updating
+
+Check, hat is the latest version at [releases](https://github.com/prometheus/node_exporter/releases) page.
+
+```
+# Download and extract the latest version:
+wget https://github.com/prometheus/node_exporter/releases/download/v1.2.1/node_exporter-1.2.1.linux-amd64.tar.gz
+tar xvfz node_exporter-1.2.1.linux-amd64.tar.gz 
+
+# Stop the service:
+sudo systemctl stop node_exporter
+
+# Update it:
+sudo cp node_exporter-1.2.1.linux-amd64/node_exporter /usr/local/bin/
+
+# Run it again:
+sudo systemctl start node_exporter
+```
+
+## Postinstall cleanup
+
+You can remove downloaded and extracted node exporter files by:
+
+```
+sudo rm -r node_exporter-1.2.1.linux-amd64
+rm node_exporter-1.2.1.linux-amd64.*
 ```
