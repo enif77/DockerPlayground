@@ -2,7 +2,6 @@
 
 - https://ubuntu.com/server/docs/backups-archive-rotation
 - https://ubuntu.com/server/docs/backups-shell-scripts
-
 - https://www.redhat.com/sysadmin/backup-dirs
 - https://www.gnu.org/software/tar/manual/html_node/exclude.html#exclude
 - https://stackoverflow.com/questions/984204/shell-command-to-tar-directory-excluding-certain-files-folders
