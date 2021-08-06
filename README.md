@@ -1,6 +1,6 @@
 # Docker Playground
 
-My notes about building a playground for Docker using a virtual machine with the Ubuntu Server 20.04 Linux.
+My notes about building a playground for Docker using a virtual machine with the Ubuntu Server 20.04 linux.
 
 - [Virtual Box](docs/vm-virtual-box.md)
 - [Operating system - Ubuntu Server 20.04](docs/os.md)
