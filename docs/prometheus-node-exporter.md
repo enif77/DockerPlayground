@@ -108,3 +108,75 @@ You can remove downloaded and extracted node exporter files by:
 sudo rm -r node_exporter-1.2.1.linux-amd64
 rm node_exporter-1.2.1.linux-amd64.*
 ```
+
+---
+
+## Installing node_exporter to Turris Omnia/OpenWRT
+
+- https://openwrt.org/docs/guide-developer/procd-init-script-example
+
+Download the latest `node_exporter` for the `linux-armv7` platform and copy it to the Turris:
+
+```
+scp ./<extracted-archive>/node_exporter root@192.168.1.1:/usr/bin
+```
+
+Check, if the `node_exporter` runs:
+
+```
+/usr/bin/node_exporter
+```
+
+You should log messages from it. Collected metrics should be visible at:
+
+```
+http://192.168.1.1:9100/metrics
+```
+
+Press CTRL-C to stop it.
+
+### Creating the procd based service for running the node_exporter
+
+Create `node_exporter.service` on your PC with this content:
+
+```
+#!/bin/sh /etc/rc.common
+USE_PROCD=1
+START=95
+STOP=01
+start_service() {
+    procd_open_instance
+    procd_set_param command /usr/bin/node_exporter --collector.processes
+    procd_set_param stdout 1
+    procd_set_param stderr 1
+    procd_close_instance
+}
+```
+
+Copy it to the Turris:
+
+```
+scp ./node_exporter.service root@192.168.1.1:/etc/init.d/node_exporter
+```
+
+To activate and start the service, run these commands on the Turris:
+
+```
+/etc/init.d/node_exporter enable
+/etc/init.d/node_exporter start
+```
+
+You should see logs from the `node_exporter` here:
+
+```
+logread -f
+```
+
+Prometheus config:
+
+```
+  - job_name: 'node'
+    scrape_interval: 5s
+    static_configs:
+    - targets: ['host.docker.internal:9100']
+```
