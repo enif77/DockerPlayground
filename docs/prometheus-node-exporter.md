@@ -178,5 +178,5 @@ Prometheus config:
   - job_name: 'node'
     scrape_interval: 5s
     static_configs:
-    - targets: ['host.docker.internal:9100']
+    - targets: ['192.168.1.1:9100']
 ```
