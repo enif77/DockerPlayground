@@ -44,3 +44,37 @@ The home page can be edited by:
 ```
 sudo nano /var/lib/docker/volumes/nginx_data/_data/index.html
 ```
+
+You can put there something like this:
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to Docker Playground!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to Docker Playground!</h1>
+<p>This is your personal Docker playground with various management, monitor and helping tools..</p>
+
+<h2>Tools you can use:</h2>
+
+<ul>
+  <li><a href="http://localhost:5000/portainer/">Portainer</a> - for managing Docker.</li>
+  <li><a href="http://localhost:5000/prometheus/">Prometheus</a> - the god of monitoring.</li>
+  <li><a href="http://localhost:5000/grafana/">Grafana</a> - to see various monitoring dashboards.</li>
+</ul>
+
+<p><em>Thank you for using Docker Playground.</em></p>
+</body>
+<html>
+```
+
+NOTE: The localhost:5000 is the VM/Playground and the external port of the nginx running on it.
