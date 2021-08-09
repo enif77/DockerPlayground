@@ -113,7 +113,7 @@ rm node_exporter-1.2.2.linux-amd64.*
 
 ## Installing node_exporter to Turris Omnia/OpenWRT
 
-NOTE: You need the 'root' user acces to your router enabled to install anything there.
+NOTE: You need the `root` user acces to your router enabled to install anything there.
 
 - https://openwrt.org/docs/guide-developer/procd-init-script-example
 
