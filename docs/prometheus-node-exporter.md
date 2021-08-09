@@ -15,9 +15,9 @@ Check, what is the latest version at the [releases](https://github.com/prometheu
 Download and install node exporter:
 
 ```
-wget https://github.com/prometheus/node_exporter/releases/download/v1.2.1/node_exporter-1.2.1.linux-amd64.tar.gz
-tar xvfz node_exporter-1.2.1.linux-amd64.tar.gz 
-sudo cp node_exporter-1.2.1.linux-amd64/node_exporter /usr/local/bin/
+wget https://github.com/prometheus/node_exporter/releases/download/v1.2.2/node_exporter-1.2.2.linux-amd64.tar.gz
+tar xvfz node_exporter-1.2.2.linux-amd64.tar.gz 
+sudo cp node_exporter-1.2.2.linux-amd64/node_exporter /usr/local/bin/
 ```
 
 Create a service user: 
@@ -87,14 +87,14 @@ Check, what is the latest version at the [releases](https://github.com/prometheu
 
 ```
 # Download and extract the latest version:
-wget https://github.com/prometheus/node_exporter/releases/download/v1.2.1/node_exporter-1.2.1.linux-amd64.tar.gz
-tar xvfz node_exporter-1.2.1.linux-amd64.tar.gz 
+wget https://github.com/prometheus/node_exporter/releases/download/v1.2.2/node_exporter-1.2.2.linux-amd64.tar.gz
+tar xvfz node_exporter-1.2.2.linux-amd64.tar.gz 
 
 # Stop the service:
 sudo systemctl stop node_exporter
 
 # Update it:
-sudo cp node_exporter-1.2.1.linux-amd64/node_exporter /usr/local/bin/
+sudo cp node_exporter-1.2.2.linux-amd64/node_exporter /usr/local/bin/
 
 # Run it again:
 sudo systemctl start node_exporter
@@ -105,13 +105,15 @@ sudo systemctl start node_exporter
 You can remove downloaded and extracted node exporter files by:
 
 ```
-sudo rm -r node_exporter-1.2.1.linux-amd64
-rm node_exporter-1.2.1.linux-amd64.*
+sudo rm -r node_exporter-1.2.2.linux-amd64
+rm node_exporter-1.2.2.linux-amd64.*
 ```
 
 ---
 
 ## Installing node_exporter to Turris Omnia/OpenWRT
+
+NOTE: You need the 'root' user acces to your router enabled to install anything there.
 
 - https://openwrt.org/docs/guide-developer/procd-init-script-example
 
@@ -121,13 +123,13 @@ Download the latest `node_exporter` for the `linux-armv7` platform and copy it t
 scp ./<extracted-archive>/node_exporter root@192.168.1.1:/usr/bin
 ```
 
-Check, if the `node_exporter` runs:
+Check, if the `node_exporter` runs (execute this on the router!):
 
 ```
 /usr/bin/node_exporter
 ```
 
-You should log messages from it. Collected metrics should be visible at:
+You should see log messages from it. Collected metrics should be visible at:
 
 ```
 http://192.168.1.1:9100/metrics
