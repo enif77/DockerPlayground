@@ -5,6 +5,8 @@
 - https://stackoverflow.com/questions/62040337/where-does-prometheus-store-metrics-data-in-container
 - https://stackoverflow.com/questions/31324981/how-to-access-host-port-from-docker-container
 - https://stackoverflow.com/questions/51425935/nginx-proxypass-to-prometheus-using-variable
+- https://www.robustperception.io/using-external-urls-and-proxies-with-prometheus
+- https://www.robustperception.io/external-urls-and-path-prefixes
 
 Create a named volumes for storing Prometheus data:
 
