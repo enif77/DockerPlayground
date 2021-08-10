@@ -56,8 +56,8 @@ ssh kid@localhost -p 8022
 
 ## Disable sleep and hybernation
 
-https://linux-tips.us/how-to-disable-sleep-and-hibernation-on-ubuntu-server/
-https://www.unixtutorial.org/disable-sleep-on-ubuntu-server/
+- https://linux-tips.us/how-to-disable-sleep-and-hibernation-on-ubuntu-server/
+- https://www.unixtutorial.org/disable-sleep-on-ubuntu-server/
 
 To check the status of a sleep service:
 
