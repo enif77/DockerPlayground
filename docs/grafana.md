@@ -39,6 +39,26 @@ Grafana configuration can be edited by:
 sudo nano /var/lib/docker/volumes/grafana_config/_data/grafana.ini
 ```
 
+Modifications necesarry for runnning Grafana behind nginx proxy:
+
+```
+# The public facing domain name used to access grafana from a browser
+;domain = localhost
+domain = grafana
+
+# Redirect to correct domain if host header does not match domain
+# Prevents DNS rebinding attacks
+;enforce_domain = false
+
+# The full public facing url you use in browser, used for redirects and emails
+# If you use reverse proxy and sub path specify full url (with sub path)
+;root_url = %(protocol)s://%(domain)s:%(http_port)s/
+root_url = %(protocol)s://%(domain)s:%(http_port)s/grafana/
+
+# Serve Grafana from subpath specified in `root_url` setting. By default it is set to `false` for compatibility reasons.;serve_from_sub_path = false
+serve_from_sub_path = true
+```
+
 Grafana metrics for Prometheus are available at URL:
 
 ```
