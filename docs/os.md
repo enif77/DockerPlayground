@@ -54,6 +54,39 @@ To connect to the newly installed VM run this command:
 ssh kid@localhost -p 8022
 ```
 
+## Disable sleep and hybernation
+
+https://linux-tips.us/how-to-disable-sleep-and-hibernation-on-ubuntu-server/
+https://www.unixtutorial.org/disable-sleep-on-ubuntu-server/
+
+To check the status of a sleep service:
+
+```
+systemctl status sleep.target
+```
+
+Disable all sleep realted services:
+
+```
+sudo systemctl mask sleep.target
+sudo systemctl mask suspend.target
+sudo systemctl mask hibernate.target
+sudo systemctl mask hybrid-sleep.target
+```
+
+or
+
+```
+sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
+```
+
+To enable the sleep:
+
+```
+sudo systemctl unmask sleep.target suspend.target hibernate
+```
+
+
 ## How to setup local time zone
 
 https://linuxize.com/post/how-to-set-or-change-timezone-on-ubuntu-20-04/
