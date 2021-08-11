@@ -37,12 +37,3 @@ Prometheus config:
     static_configs:
     - targets: ['host.docker.internal:8080']
 ```
-
- ## Additional links
-
-- https://prometheus.io/docs/prometheus/latest/installation/
-- https://github.com/prometheus/blackbox_exporter/blob/master/example.yml#L19
-- https://dev.to/ablx/minimal-prometheus-setup-with-docker-compose-56mp
-- https://stackoverflow.com/questions/24319662/from-inside-of-a-docker-container-how-do-i-connect-to-the-localhost-of-the-mach
-- https://docs.docker.com/storage/volumes/
-- https://valyala.medium.com/how-to-use-relabeling-in-prometheus-and-victoriametrics-8b90fc22c4b2
