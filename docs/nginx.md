@@ -92,18 +92,24 @@ http {
         stub_status;
       }
 
-      # Uncomment, what you have installed. nginx wont start, if something below does not exists!
+      # Uncomment, what you have installed.
+      
+      # Note: The 'set $upstream ...' is necessary here. If not used, nginx will fail,
+      # if the upstream server is not running or not responding!
 
       #location /portainer/ {
-      #  proxy_pass http://portainer:9000/;
+      #  set $upstream portainer:9000;
+      #  proxy_pass http://$upstream/;
       #}
 
       #location /prometheus/ {
-      #  proxy_pass http://prometheus:9090/;
+      #  set $upstream prometheus:9090;
+      #  proxy_pass http://$upstream/;
       #}
 
       #location /grafana/ {
-      #  proxy_pass http://grafana:3000/;
+      #  set $upstream grafana:3000;
+      #  proxy_pass http://$upstream/;
       #}
 
    }
