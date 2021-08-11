@@ -5,8 +5,12 @@
 - https://stackoverflow.com/questions/62040337/where-does-prometheus-store-metrics-data-in-container
 - https://stackoverflow.com/questions/31324981/how-to-access-host-port-from-docker-container
 - https://stackoverflow.com/questions/51425935/nginx-proxypass-to-prometheus-using-variable
+- https://stackoverflow.com/questions/24319662/from-inside-of-a-docker-container-how-do-i-connect-to-the-localhost-of-the-mach
 - https://www.robustperception.io/using-external-urls-and-proxies-with-prometheus
 - https://www.robustperception.io/external-urls-and-path-prefixes
+- https://github.com/prometheus/blackbox_exporter/blob/master/example.yml#L19
+- https://dev.to/ablx/minimal-prometheus-setup-with-docker-compose-56mp
+- https://valyala.medium.com/how-to-use-relabeling-in-prometheus-and-victoriametrics-8b90fc22c4b2
 
 Create a named volumes for storing Prometheus data:
 
