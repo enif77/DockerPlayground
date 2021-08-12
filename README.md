@@ -12,6 +12,7 @@ My notes about building a playground for Docker using a virtual machine with the
 - [nginx](docs/nginx.md)
 - [Prometheus](docs/prometheus.md)
 - [Prometheus - Node Exporter](docs/prometheus-node-exporter.md)
+- [Prometheus - Windows Exporter](docs/prometheus-windows-exporter.md)
 - [Prometheus - cAdvisor](docs/prometheus-cadvisor.md)
 - [Prometheus - nginx Exporter](docs/prometheus-nginx-exporter.md)
 - [Grafana](docs/grafana.md)
