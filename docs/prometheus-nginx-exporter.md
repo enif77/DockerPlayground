@@ -19,6 +19,8 @@ docker run \
   -nginx.scrape-uri=http://portal:80/nginx_status
 ```
 
+NOTE: The port is not necessary, because the exporter wont be accessible from the outside of the docker server.
+
 Metrics provided by the nginx exporter can be checked at: 
 
 ```
