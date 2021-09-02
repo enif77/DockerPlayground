@@ -71,6 +71,7 @@ Insert this to it and restart the Docker service (or the whole VM):
     "max-size": "10m",
     "max-file": "3"
   },
+  "features" : {"buildkit" : true},
   "metrics-addr" : "127.0.0.1:9323",
   "experimental" : true
 }
