@@ -11,6 +11,7 @@ Description of how to install and setup [Docker](https://www.docker.com).
 - https://docs.docker.com/engine/reference/commandline/run/
 - https://docs.docker.com/storage/volumes/
 - https://www.tutorialworks.com/container-networking/
+- https://www.cloudsavvyit.com/12441/what-is-dockers-buildkit-and-why-does-it-matter/
 
 ## Installation
 
@@ -82,6 +83,12 @@ Insert this to it and restart the Docker service (or the whole VM):
 This will change logging format to JSON with a maximal log file size and a limited amount of log files. It also enables [Prometheus](https://prometheus.io/) metrics endpoint, so the Docker can be monitored with Prometheus.
 
 Use different logging setup, when needed. The Prometheus metrics endpoint is not necessary, when you are not planning to monitor running Docker containers with Prometheus.
+
+To restart the docker service, run this command:
+
+```
+systemctl reload docker
+```
 
 ## Docker network
 
