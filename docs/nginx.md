@@ -155,3 +155,10 @@ You can put there something like this:
 ```
 
 NOTE: The `localhost:5000` is the VM/Playground and the external port of the nginx running on it.
+
+Add in Virtual Box settings port mapping for port 5000, so you can access nginx from your host machine. You can access nginx by opening URL:
+
+```
+http://localhost:5000/
+
+```
