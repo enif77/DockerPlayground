@@ -14,6 +14,12 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-
 
 NOTE: The URL contains a version. Check the above link to get the latest version.
 
+Make it executable:
+
+```
+sudo chmod +x /usr/local/bin/docker-compose
+```
+
 You can check, if it is working by running:
 
 ```
