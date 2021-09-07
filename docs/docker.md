@@ -87,7 +87,7 @@ Use different logging setup, when needed. The Prometheus metrics endpoint is not
 To restart the docker service, run this command:
 
 ```
-systemctl reload docker
+sudo systemctl reload docker
 ```
 
 ## Docker network
