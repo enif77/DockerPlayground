@@ -5,6 +5,7 @@ My notes about building a playground for Docker using a virtual machine with the
 - [Virtual Box](docs/vm-virtual-box.md)
 - [Operating system - Ubuntu Server 20.04](docs/os.md)
 - [Operating system - Backup](docs/os-backup.md)
+- [Operating system - LVM](docs/os-lvm.md)
 - [Docker](docs/docker.md)
 - [Docker Compose](docs/docker-compose.md)
 - [Portainer](docs/portainer.md)
