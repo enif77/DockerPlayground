@@ -30,6 +30,8 @@ The original path is `C:\Windows\System32\config\systemprofile\AppData\Roaming\m
 
 Description for other operating systems is here: [https://github.com/canonical/multipass/pull/1789](https://github.com/canonical/multipass/pull/1789).
 
+How to replace Docker Desktop with Multipass tutorial is here: [https://techsparx.com/](https://techsparx.com/software-development/docker/docker-desktop/multipass.html).
+
 
 ## TODO
 
