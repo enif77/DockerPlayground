@@ -18,6 +18,19 @@ My notes about building a playground for Docker using a virtual machine with the
 - [Prometheus - nginx Exporter](docs/prometheus-nginx-exporter.md)
 - [Grafana](docs/grafana.md)
 
+
+## Multipass
+
+VirtualBox VMs can be created and controlled automatically by the [Multipass](https://multipass.run) tool.
+
+Storage for VMs created by the Multipass can be changed by creating and setting the `MULTIPASS_STORAGE` environment
+variable (at system level). Once this variable is set, restart the `Multipass Service` service.
+
+The original path is `C:\Windows\System32\config\systemprofile\AppData\Roaming\multipassd`.
+
+Description for other operating systems is here: [https://github.com/canonical/multipass/pull/1789](https://github.com/canonical/multipass/pull/1789).
+
+
 ## TODO
 
 * MSSQL
