@@ -36,6 +36,8 @@ sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.ta
 # Set local timezone:
 sudo timedatectl set-timezone Europe/Prague
 
+# --- by hand ---
+
 # Enable ssh access for root:
 sudo nano /etc/ssh/sshd_config
 
@@ -49,6 +51,16 @@ sudo systemctl restart ssh
 # Set password for root:
 sudo bash
 passwd
+
+# --- or by script ---
+
+# https://askubuntu.com/questions/20414/find-and-replace-text-within-a-file-using-commands
+sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
+
+# https://stackoverflow.com/questions/52211476/change-root-password-using-bash-script
+echo "your-favorite-super-password-here! :-)" | passwd --stdin root
+
+# ---
 
 # Root can connect fia SFTP or SSH: ssh root@localhost -p port
 
